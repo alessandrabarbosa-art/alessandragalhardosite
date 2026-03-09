@@ -1,1 +1,430 @@
-# alessandragalhardosite
+# <!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- ================================================= -->
+<!-- CABEÇALHO DO SITE / CONFIGURAÇÕES / CSS -->
+<!-- ================================================= -->
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Alessandra Galhardo | Portfólio ADS</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+
+:root{
+--primary:#a855f7;
+--secondary:#3b82f6;
+--bg-dark:#050505;
+--card-bg:rgba(20,20,20,0.9);
+--text-white:#ffffff;
+--text-gray:#a1a1aa;
+}
+
+*{box-sizing:border-box;margin:0;padding:0;}
+
+body{
+font-family:'Inter',sans-serif;
+background-color:var(--bg-dark);
+color:var(--text-white);
+line-height:1.6;
+overflow-x:hidden;
+}
+
+#particles-js{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:-1;
+background:linear-gradient(to bottom,#0f001a,#050505);
+}
+
+header{
+padding:60px 20px;
+text-align:center;
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+.profile-wrapper{
+position:relative;
+margin-bottom:25px;
+}
+
+.profile-img{
+width:180px;
+height:180px;
+border-radius:50%;
+border:3px solid var(--primary);
+object-fit:cover;
+z-index:2;
+position:relative;
+box-shadow:0 0 20px rgba(168,85,247,0.5);
+}
+
+.profile-glow{
+position:absolute;
+top:-10px;
+left:-10px;
+right:-10px;
+bottom:-10px;
+background:linear-gradient(45deg,var(--primary),var(--secondary));
+border-radius:50%;
+filter:blur(15px);
+opacity:.6;
+}
+
+.hero-title{
+font-family:'Orbitron',sans-serif;
+font-size:clamp(1.8rem,5vw,3rem);
+letter-spacing:2px;
+background:linear-gradient(to right,#fff,var(--primary),var(--secondary));
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.contact-bar{
+display:flex;
+gap:12px;
+flex-wrap:wrap;
+justify-content:center;
+margin-top:25px;
+}
+
+.contact-link{
+text-decoration:none;
+color:#fff;
+padding:10px 20px;
+background:rgba(255,255,255,0.05);
+border:1px solid var(--primary);
+border-radius:50px;
+font-size:.85rem;
+transition:.3s;
+}
+
+.contact-link:hover{
+background:var(--primary);
+transform:translateY(-3px);
+}
+
+.container{
+max-width:900px;
+margin:auto;
+padding:20px;
+}
+
+.main-card{
+background:var(--card-bg);
+border-radius:20px;
+padding:35px;
+margin-bottom:35px;
+border-left:6px solid var(--primary);
+}
+
+.nav-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+gap:15px;
+margin-bottom:30px;
+}
+
+.nav-item{
+background:var(--card-bg);
+padding:25px;
+border-radius:15px;
+text-align:center;
+cursor:pointer;
+transition:.3s;
+}
+
+.nav-item:hover{
+transform:translateY(-8px);
+}
+
+.content-section{
+display:none;
+background:var(--card-bg);
+padding:35px;
+border-radius:20px;
+margin-bottom:40px;
+}
+
+.tag{
+display:inline-block;
+background:rgba(59,130,246,.1);
+color:var(--secondary);
+padding:5px 12px;
+border-radius:6px;
+margin:5px;
+font-size:.85rem;
+border:1px solid var(--secondary);
+}
+
+.experience-item{
+margin-bottom:15px;
+padding:15px;
+border-radius:10px;
+background:rgba(255,255,255,.03);
+border-left:3px solid var(--secondary);
+}
+
+.edu-item{
+margin-bottom:20px;
+padding-left:15px;
+border-left:2px solid var(--primary);
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<!-- ================================================= -->
+<!-- PERFIL / HEADER / CONTATOS -->
+<!-- ================================================= -->
+
+<header>
+
+<div class="profile-wrapper">
+<div class="profile-glow"></div>
+<img src="foto-perfil.jpg" alt="Alessandra Galhardo" class="profile-img">
+</div>
+
+<h1 class="hero-title">ALESSANDRA GALHARDO</h1>
+
+<p style="color:var(--secondary);letter-spacing:3px;font-weight:bold;margin-top:10px;">
+ANALISTA DE DADOS & SISTEMAS
+</p>
+
+<div class="contact-bar">
+
+<a href="https://www.linkedin.com/in/alessandra-barbosa-galhardo-011711367/" target="_blank" class="contact-link">
+<i class="fab fa-linkedin"></i> LinkedIn
+</a>
+
+<a href="https://github.com/AlessandraBJsilva" target="_blank" class="contact-link">
+<i class="fab fa-github"></i> GitHub
+</a>
+
+<a href="mailto:alessandra.barbosa@agiltec.com" class="contact-link">
+<i class="fas fa-envelope"></i> Email
+</a>
+
+<a href="tel:11910365601" class="contact-link">
+<i class="fas fa-phone"></i> (11) 91036-5601
+</a>
+
+</div>
+
+</header>
+
+<div class="container">
+
+<!-- ================================================= -->
+<!-- RESUMO PROFISSIONAL -->
+<!-- ================================================= -->
+
+<section class="main-card">
+
+<h2><i class="fas fa-id-card"></i> RESUMO PROFISSIONAL</h2>
+
+<p>
+Estudante do <strong>3º semestre de Análise e Desenvolvimento de Sistemas – Anhanguera</strong>.
+Experiência nas áreas administrativa, financeira e suporte ao cliente. 
+Atualmente focada em análise de dados, automação e banco de dados utilizando Python e SQL.
+</p>
+
+</section>
+
+<!-- ================================================= -->
+<!-- MENU DE NAVEGAÇÃO -->
+<!-- ================================================= -->
+
+<div class="nav-grid">
+
+<div class="nav-item" onclick="toggle('tech')"><i class="fas fa-laptop-code"></i><h3>Tecnologias</h3></div>
+<div class="nav-item" onclick="toggle('exp')"><i class="fas fa-history"></i><h3>Experiência</h3></div>
+<div class="nav-item" onclick="toggle('proj')"><i class="fas fa-project-diagram"></i><h3>Projetos</h3></div>
+<div class="nav-item" onclick="toggle('edu')"><i class="fas fa-user-graduate"></i><h3>Educação</h3></div>
+
+</div>
+
+<!-- ================================================= -->
+<!-- TECNOLOGIAS -->
+<!-- ================================================= -->
+
+<div id="tech" class="content-section">
+
+<h2>STACK TÉCNICA</h2>
+
+<span class="tag">Python</span>
+<span class="tag">SQL Server</span>
+<span class="tag">MySQL</span>
+<span class="tag">Power BI</span>
+<span class="tag">Node.js</span>
+<span class="tag">HTML</span>
+<span class="tag">JavaScript</span>
+<span class="tag">Salesforce</span>
+<span class="tag">Linux</span>
+
+</div>
+
+<!-- ================================================= -->
+<!-- EXPERIÊNCIA PROFISSIONAL -->
+<!-- ================================================= -->
+
+<div id="exp" class="content-section">
+
+<h2>EXPERIÊNCIA PROFISSIONAL</h2>
+
+<div class="experience-item"><strong>Analista Financeiro / Administrativo</strong> – Polo-Ar (2023 - Atual)</div>
+<div class="experience-item"><strong>Analista Suporte ao Cliente</strong> – Micro Up (2021 - 2022)</div>
+<div class="experience-item"><strong>Analista Atendimento Iluminação Pública</strong> – Brasiluz (2020 - 2021)</div>
+<div class="experience-item"><strong>Assistente Administrativo</strong> – No Fire Sistemas (2018 - 2019)</div>
+<div class="experience-item"><strong>Assistente Comercial</strong> – F-New Eletrônicos (2017 - 2018)</div>
+<div class="experience-item"><strong>Recepcionista Administrativa</strong> – Caixa Econômica (2014 - 2016)</div>
+
+</div>
+
+<!-- ================================================= -->
+<!-- PROJETOS -->
+<!-- ================================================= -->
+
+<div id="proj" class="content-section">
+
+<h2>PROJETOS</h2>
+
+<div class="experience-item">
+<strong>Relatório Lógico em Python</strong>
+<p>Projeto de análise de dados utilizando Python.</p>
+<a href="https://github.com/AlessandraBJsilva" target="_blank">Ver no GitHub</a>
+</div>
+
+<div class="experience-item">
+<strong>Modelagem de Banco de Dados</strong>
+<p>Estruturação de banco de dados SQL.</p>
+</div>
+
+</div>
+
+<!-- ================================================= -->
+<!-- FORMAÇÃO E CURSOS -->
+<!-- ================================================= -->
+
+<div id="edu" class="content-section">
+
+<h2>FORMAÇÃO & CURSOS</h2>
+
+<div class="edu-item">
+<strong>Análise e Desenvolvimento de Sistemas</strong><br>
+<small>Faculdade Anhanguera – 3º semestre</small>
+</div>
+
+<div class="edu-item">
+<strong>SQL Server – 40h</strong><br>
+<small>Impacta Treinamentos – Conclusão 28/02/2026</small>
+</div>
+
+<div class="edu-item">
+<strong>Python</strong><br>
+<small>Curso em Vídeo</small>
+</div>
+
+<div class="edu-item">
+<strong>JavaScript</strong><br>
+<small>Curso em Vídeo</small>
+</div>
+
+<div class="edu-item">
+<strong>HTML</strong><br>
+<small>Curso em Vídeo</small>
+</div>
+
+<div class="edu-item">
+<strong>MySQL</strong><br>
+<small>Curso em Vídeo</small>
+</div>
+
+<div class="edu-item">
+<strong>Scratch</strong><br>
+<small>Curso em Vídeo</small>
+</div>
+
+<div class="edu-item">
+<strong>Projeto Interface Gráfica com Python</strong><br>
+<small>Fundação Bradesco</small>
+</div>
+
+<div class="edu-item">
+<strong>Bombeiro Civil</strong><br>
+<small>Senac Jabaquara</small>
+</div>
+
+<div class="edu-item">
+<strong>Técnico Administrativo Financeiro</strong><br>
+<small>Aldeia do Futuro</small>
+</div>
+
+<div class="edu-item">
+<strong>Defesa IA 3.0 Operação</strong><br>
+<small>Intelbras</small>
+</div>
+
+<div class="edu-item">
+<strong>Software Intelbras CVE-Pro</strong><br>
+<small>Intelbras</small>
+</div>
+
+<div class="edu-item">
+<strong>Implementando Rota Estática</strong><br>
+<small>Intelbras</small>
+</div>
+
+</div>
+
+</div>
+
+<!-- ================================================= -->
+<!-- SCRIPTS -->
+<!-- ================================================= -->
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+<script>
+
+function toggle(id){
+
+const sections=document.querySelectorAll('.content-section')
+
+sections.forEach(s=>s.style.display='none')
+
+document.getElementById(id).style.display='block'
+
+}
+
+particlesJS("particles-js",{
+
+particles:{
+number:{value:80},
+color:{value:"#a855f7"},
+shape:{type:"circle"},
+opacity:{value:0.4},
+size:{value:3},
+move:{enable:true,speed:2}
+}
+
+})
+
+</script>
+
+</body>
+</html>
